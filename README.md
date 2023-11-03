@@ -26,3 +26,34 @@ This project focuses on the application of deep learning to identify and classif
 
 - The project's highlight is the development of an ensemble method combining two predictions of  DenseNet121 and ResNet50 models, which achieved a record accuracy of 99.94%.
 - Comparative analysis of the models showed that ensemble methods substantially improve accuracy and robustness.
+
+## **Repository Structure**
+
+Our repository is organized as follows:
+
+### **Models and Scripts**
+
+- **`Alexnet_SGD.py`**: Script for training the AlexNet model using SGD optimizer.
+- **`Densenet121_SGD.py`**: Script for training DenseNet121 with SGD optimizer.
+- **`Densenet121_adabelief.py`**: DenseNet121 trained with AdaBelief optimizer.
+- **`EfficientnetB0_SGD.py`**: Script for EfficientNetB0 with SGD optimizer.
+- **`EfficientnetB0_adabelief.py`**: EfficientNetB0 optimized with AdaBelief.
+- **`MobilenetV2_SGD.py`**: MobileNetV2 training script using SGD optimizer.
+- **`MobilenetV2_adabelief.py`**: MobileNetV2 using the AdaBelief optimizer.
+- **`Resnet50_SGD.py`**: Training script for ResNet50 with SGD.
+- **`Resnet50_adam.py`**: Adam optimizer script for ResNet50.
+- **`VGG16_SGD.py`**: Script to train VGG16 with SGD optimizer.
+- **`VGG16_adam.py`**: VGG16 training with Adam optimizer.
+- **`Voting_Ensemble_2base.py`**: Script for a 2-model voting ensemble.
+- **`Voting_Ensemble_4base.py`**: 4-model voting ensemble training script.
+- **`custom_CNN_adam.py`**: Custom CNN architecture trained with Adam optimizer.
+
+### **Ensemble Models**
+
+- **`Ensemble_Densenet121_2base.py`**: A 2-model ensemble with DenseNet121 architectures.
+- **`Ensemble_EfficientnetB0_2base.py`**: EfficientNetB0 duo in an ensemble setup.
+- **`Ensemble_EfficientnetB0_4base.py`**: Ensemble script for four EfficientNetB0 models.
+
+### **Output Logs**
+
+- **`.out`** files corresponding to each **`.py`** script provide the training and validation logs for the models.
